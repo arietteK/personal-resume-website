@@ -78,6 +78,7 @@ section:hover {
     color: var(--text-color);
     display: none; /* hide the menu icon by default*/
 }
+/* adding more design to home page to make it visually-appealing*/
 .home {
     display: flex;
     justify-content: center;
@@ -126,7 +127,7 @@ span {
     color: var(--second-bg-color);
     box-shadow: 0 0 1rem var(--main-color);
 }
-
+/* adding more design to the about section to make it visually-appealing*/
 .about {
     display: flex;
     justify-content: center;
@@ -150,4 +151,43 @@ span {
 .about-content p {
     font-size: 1.6rem;
     margin: 2rem 0 3rem;
+}
+/* adding more design to skills section to make it visually-appealing*/
+.skills h2 {
+    margin-bottom: 5rem;
+}
+.skills-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 2rem;
+}
+.skills-container .skills-box {
+    flex: 1 1 30rem;
+    background: var(--second-bg-color);
+    padding: 3rem 2rem 4rem;
+    border-radius: 2rem;
+    text-align: center;
+    border: 0.2rem solid var(--bg-color);
+    transition: 0.5s ease;
+}
+.skills-container .skills-box:hover {
+    border-color: var(--main-color);
+    transform: scale(1.02);
+}
+.skills-box i {
+    font-size: 5rem;
+    color: var(--main-color);
+}
+.skills-box h3 {
+    font-size: 2.4rem;
+}
+.skills-box p {
+    font-size: 1.4rem;
+    margin: 1rem 0 3rem;
+}
+/* styling the projects section*/
+.projects {
+    background: var(--second-bg-color);
 }
