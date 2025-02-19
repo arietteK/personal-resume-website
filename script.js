@@ -45,6 +45,6 @@ ScrollReveal({
 });
 
 ScrollReveal().reveal('.home-content, .heading', { origin: 'top' });
-ScrollReveal().reveal('.home-img, .skills-container, .projects-box, .contact form', { origin: 'bottom' });
+ScrollReveal().reveal('.home-img, .skills-container, .education-container, .projects-box, .contact form', { origin: 'bottom' });
 ScrollReveal().reveal('.about-img', { origin: 'left' });
 ScrollReveal().reveal('.about-content', { origin: 'right' });
