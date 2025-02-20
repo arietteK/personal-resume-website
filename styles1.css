@@ -16,7 +16,7 @@
     --bg-color: #1f242d;
     --second-bg-color: #323946;
     --text-color: #fff;
-    --main-color: #0ef;
+    --main-color: #00df82;
 }
 
 html {
@@ -88,7 +88,7 @@ section:hover {
     justify-content: center;
     align-items: center;
 }
-
+/*Making the image at the home page float infinitely*/
 .home-img img {
     width: 35vw;
     animation: floatImage 4s ease-in-out infinite;
@@ -106,7 +106,7 @@ section:hover {
         transform: translateY(0);
     }
 }
-
+/*Styling the content on the home page*/
 .home-content h3 {
     font-size: 3.2rem;
     font-weight: 700;
@@ -122,10 +122,12 @@ span {
     font-size: 5.6rem;
     font-weight: 700;
     line-height: 1.3;
+    padding: 0.5rem;
 }
 .home-content p {
     font-size: 1.6rem;
 }
+/*Making the social media icons kind of light up when hovered over*/
 .social-media a {
     display: inline-flex;
     justify-content: center;
@@ -251,10 +253,25 @@ span {
     margin-bottom: 4rem;
 }
 .projects-container {
+    display: flex;
+    justify-content: center;
+    gap: 2.5rem;
+    flex-wrap: wrap;
+    /*
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
     align-items: center;
     gap: 2.5rem;
+    justify-content: center; */
+}
+.projects-box {
+    width: calc(33.33% - 2.5rem); /* Adjust width while considering the gap */
+    max-width: 350px; /* Set a maximum width to prevent stretching */
+    border-radius: 2rem;
+    box-shadow: 0 0 1rem var(--bg-color);
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
 }
 .projects-container .projects-box {
     position: relative;
@@ -328,7 +345,7 @@ span {
 .contact form textarea {
     resize: none; /* makes the message textbox have a fixed size*/
 }
-.btn {
+.btn { /* styling the button to make it more visually appealing*/
     display: inline-block;
     padding: 1rem 2.8rem;
     background: var(--main-color);
@@ -347,8 +364,6 @@ span {
     margin-top: 2rem;
     cursor: pointer;
 }
-
-
 /* styling the footer section of the web page*/
 .footer {
     display: flex;
@@ -377,7 +392,6 @@ span {
     font-size: 2.4rem;
     color: var(--second-bg-color); /*made the icon to scroll up more clear*/
 }
-
 /*Breakpoints*/
 
 @media (max-width: 1200px) {
