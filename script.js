@@ -7,6 +7,16 @@ menuIcon.onclick = () => {
   navbar.classList.toggle('active')
 }
 
+/*To handle the menu toggle */
+document.addEventListener("DOMContentLoaded", function() {
+  const menuIcon = document.querySelector('.menu-icon');
+  const navbar = document.querySelector('.navbar');
+  menuIcon.addEventListener("click", function() {
+    menuIcon.classList.toggle('bx-x')
+    navbar.classList.toggle('active');
+  })
+});
+
 
 /* scroll section active link */
 let sections = document.querySelectorAll('section');
@@ -48,18 +58,6 @@ ScrollReveal().reveal('.home-content, .heading', { origin: 'top' });
 ScrollReveal().reveal('.home-img, .skills-container, .education-container, .projects-box, .contact form', { origin: 'bottom' });
 ScrollReveal().reveal('.about-img', { origin: 'left' });
 ScrollReveal().reveal('.about-content', { origin: 'right' });
-
-/*ensuring that the contact form actually works
-
-document.querySelector(".contact").addEventListener("submit", (e) => {
-  e.preventDefault();
-  const name = document.getElementById("name_input").value;
-  const email = document.getElementById("email").value;
-  const phone_num = document.getElementById("phone_number").value;
-  const message = document.getElementById("text_area").value;
-  alert(`${message} By:${name} email address ${email} with Phone number of ${phone_num}`);
-});
-*/
 
 
 document.getElementById('contact').addEventListener('submit', function (event) {
